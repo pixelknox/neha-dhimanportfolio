@@ -10,7 +10,7 @@ html{overflow-x: hidden;position:relative;}
 
 .main{display: flex;width:100%;flex-wrap: wrap;padding: 0 100px;}
 .header{display: flex;flex-direction: column;width: 100%;}
-.header .nav-bar{display:flex;width:100%;flex-direction: row;align-items: center;}
+.header .nav-bar{display:flex;width:100%;flex-direction: row;align-items: center;position: fixed;left: 0;padding:0 2em;z-index:999;background:#eee;}
 .header .nav-bar .logo{display: flex;flex:1 1;font-size: 18px;font-weight:900;line-height: 32px;}
 .header .nav-bar .nav{display: flex;flex: auto;align-items: center;justify-content: flex-end;}
 .header .nav-bar .nav ul{display: flex;} .header .nav-bar .nav ul li{display: flex;padding: 5px;}
@@ -62,8 +62,8 @@ footer p{line-height: 16px;}
     .header .nav-bar .nav-m{display: flex;flex: auto;align-items: center;justify-content: flex-end;position: relative;}
 .header .nav-bar .nav-m ul{display: flex;} .header .nav-bar .nav ul li{display: flex;padding: 5px;}
 .header .nav-bar .nav-m li:first-child{margin-right: 50px;}
-.header .nav-bar .nav-m .toggle-btn{position: absolute;right:0;top:-12px;transition:.35s all ease-in-out;transform:rotate(0deg) scaleX(1);}
-.expand-menu{padding:5px 15px;display:flex;position:absolute;right:0;top:15px;right:-14px;flex-direction: column;background: #1ab05c;color: white;justify-content: center;align-items: center;z-index:999;
+.header .nav-bar .nav-m .toggle-btn{position: absolute;right:0;top:-19px;transition:.35s all ease-in-out;transform:rotate(0deg) scaleX(1);}
+.expand-menu{padding:5px 15px;display:flex;position:absolute;right:0;top:16px;right:-14px;flex-direction: column;background: #1ab05c;color: white;justify-content: center;align-items: center;z-index:999;
 transform: scaleY(0);transform-origin: top;transition:.25 all ease-in-out;opacity: 0;}
 .header .nav-bar .nav-m li, .header .nav-bar .nav-m li a{line-height:10px;margin:10px 0 !important;}
 .expand-menu::before{height: 0;
@@ -76,6 +76,7 @@ content: '';
 top:-10px;right: 10px;}
 .expand-toggle{display: flex !important;transform: scaleY(1);transform-origin: top;transition:.35s all ease-in-out;opacity: 1;}
 .m-rotate{content: '';}
+.header .nav-bar .nav-m .toggle-btn span{font-size: 40px;}
 .m-rotate span{transform:rotate(0deg) scaleX(-1);transform-origin:center;transition:.35s all ease-in-out;}
 }
 
