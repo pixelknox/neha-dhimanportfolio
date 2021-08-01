@@ -1,3 +1,15 @@
+$(document).ready(function(){
+  $(".toggle-btn").on('click',function(){
+    $(this).toggleClass('m-rotate')
+    $(".expand-menu").toggleClass("expand-toggle");
+  });
+});
+
+
+
+
+
+
 
 (function($) {
   var selectors = [];
