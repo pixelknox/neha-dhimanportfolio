@@ -1,0 +1,82 @@
+/* //Author Neha dhiman// */
+@charset "utf-8";
+
+body{padding: 0;margin: 0;display: flex;align-items:stretch;color: #4E4D4D;background: #EEE;overflow-x: hidden;position: relative;}
+html{overflow-x: hidden;position:relative;}
+*{text-decoration: none;list-style: none;color: inherit;font-family: 'Poppins', sans-serif;font-size: 14px;line-height:2;padding:0;margin:0;box-sizing: border-box;}
+
+.font-24{font-size: 24px;} .font-36{font-size:36px;} .font-18{font-size: 18px;}
+
+
+.main{display: flex;width:100%;flex-wrap: wrap;padding: 0 100px;}
+.header{display: flex;flex-direction: column;width: 100%;}
+.header .nav-bar{display:flex;width:100%;flex-direction: row;align-items: center;}
+.header .nav-bar .logo{display: flex;flex:1 1;font-size: 18px;font-weight:900;line-height: 32px;}
+.header .nav-bar .nav{display: flex;flex: auto;align-items: center;justify-content: flex-end;}
+.header .nav-bar .nav ul{display: flex;} .header .nav-bar .nav ul li{display: flex;padding: 5px;}
+.header .nav-bar .nav li:first-child{margin-right: 50px;}
+
+.header .banner{padding: 50px 0;display: flex;width: 100%;flex-direction:column;}
+
+.section{display:flex;padding: 50px 0;width: 100%;flex-wrap: wrap;}
+
+.info{display: flex;flex-wrap:wrap;align-items: center;width: 100%;}
+.info .thumb{display: flex;align-items: center;flex:0 1;}
+.info .thumb img{display: flex;align-items: center;width: 352px;height: 352px;background-color:#C4C4C4;color: #E5E5E5;}
+.info .cover-text{display: flex;flex:0 0 50%;width: 100%;flex-direction: column;justify-content: flex-start;padding:0 40px;}
+
+.gallery{display: flex;flex-wrap: wrap;width:100%;justify-content: space-around;margin:0 -15px ;}
+.gallery .thumb{display: flex;border-radius: 12px;background-color: #C4C4C4;width:576px;height:504px;flex:1 1 40%;margin:10px;}
+.gallery .thumb img{display: flex;width:100%;}
+
+.btn {max-width:256px;display:inline-block;font-weight: 400;line-height: 1.5;color: #212529;text-align: center; text-decoration: none;
+    vertical-align: middle;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;user-select: none;background-color: transparent;
+    border:1px solid #4E4D4D;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    
+}
+
+.btn:hover{background:#4E4D4D;color:white;border-color:white;}
+
+footer{display: flex;justify-content:center;align-items: flex-start;flex-direction: column;}
+footer p{line-height: 16px;}
+
+.nav-m{display: none;}
+
+@media (max-width:1024px){
+    .main{padding:0 2em;}
+    .gallery{margin:0;}
+
+}
+@media (max-width:991px){
+    .gallery .thumb{flex:0 0 100%;}
+    .info{justify-content: center;}
+    .info .cover-text{padding:0;}
+    .info .cover-text{flex:100%;}
+    .jstfy-m-c{justify-content: center;display: flex;width: 100%;}
+    .mx-m-auto{margin:0 auto;}
+    .header .nav-bar .nav.nav{display: none;}
+    .header .nav-bar .nav-m{display: flex;flex: auto;align-items: center;justify-content: flex-end;position: relative;}
+.header .nav-bar .nav-m ul{display: flex;} .header .nav-bar .nav ul li{display: flex;padding: 5px;}
+.header .nav-bar .nav-m li:first-child{margin-right: 50px;}
+.header .nav-bar .nav-m .toggle-btn{position: absolute;right:0;top:-12px;transition:.35s all ease-in-out;transform:rotate(0deg) scaleX(1);}
+.expand-menu{padding:5px 15px;display:flex;position:absolute;right:0;top:24px;right:-14px;flex-direction: column;background: #1ab05c;color: white;justify-content: center;align-items: center;z-index:999;
+transform: scaleY(0);transform-origin: top;transition:.25 all ease-in-out;opacity: 0;}
+.header .nav-bar .nav-m li, .header .nav-bar .nav-m li a{line-height:10px;margin:10px 0 !important;}
+.expand-menu::before{height: 0;
+	width: 0;
+	border-left:5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #1AB05C;
+display: inline-block;position: absolute;
+content: '';
+top:-10px;right: 10px;}
+.expand-toggle{display: flex !important;transform: scaleY(1);transform-origin: top;transition:.35s all ease-in-out;opacity: 1;}
+.m-rotate{content: '';}
+.header .nav-bar .nav-m .toggle-btn span{font-size: 40px;}
+.m-rotate span{transform:rotate(0deg) scaleX(-1);transform-origin:center;transition:.35s all ease-in-out;}
+}
+
