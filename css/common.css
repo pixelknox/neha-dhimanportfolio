@@ -63,7 +63,7 @@ footer p{line-height: 16px;}
 .header .nav-bar .nav-m ul{display: flex;} .header .nav-bar .nav ul li{display: flex;padding: 5px;}
 .header .nav-bar .nav-m li:first-child{margin-right: 50px;}
 .header .nav-bar .nav-m .toggle-btn{position: absolute;right:0;top:-12px;transition:.35s all ease-in-out;transform:rotate(0deg) scaleX(1);}
-.expand-menu{padding:5px 15px;display:flex;position:absolute;right:0;top:15px;right:-14px;flex-direction: column;background: #1ab05c;color: white;justify-content: center;align-items: center;z-index:999;
+.expand-menu{padding:5px 15px;display:flex;position:absolute;right:0;top:24px;right:-14px;flex-direction: column;background: #1ab05c;color: white;justify-content: center;align-items: center;z-index:999;
 transform: scaleY(0);transform-origin: top;transition:.25 all ease-in-out;opacity: 0;}
 .header .nav-bar .nav-m li, .header .nav-bar .nav-m li a{line-height:10px;margin:10px 0 !important;}
 .expand-menu::before{height: 0;
@@ -76,6 +76,7 @@ content: '';
 top:-10px;right: 10px;}
 .expand-toggle{display: flex !important;transform: scaleY(1);transform-origin: top;transition:.35s all ease-in-out;opacity: 1;}
 .m-rotate{content: '';}
+.header .nav-bar .nav-m .toggle-btn span{font-size: 40px;}
 .m-rotate span{transform:rotate(0deg) scaleX(-1);transform-origin:center;transition:.35s all ease-in-out;}
 }
 
